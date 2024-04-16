@@ -12,8 +12,8 @@ class DynamoDBManager:
             self.dynamodb = boto3.resource(
                 'dynamodb',
                 region_name=os.environ.get('COGNITO_REGION'),
-                aws_access_key_id=os.environ.get('AWS_ACCESS_KEY'),
-                aws_secret_access_key=os.environ.get('AWS_SECRET_KEY')
+                aws_access_key_id=os.environ.get('MY_ACCESS_KEY'),
+                aws_secret_access_key=os.environ.get('MY_SECRET_KEY')
             )
 
             # Get or create the DynamoDB table for items
