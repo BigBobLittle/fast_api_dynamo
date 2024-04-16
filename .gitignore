@@ -1,0 +1,6 @@
+.pytest_cache
+/**/__pycache__/
+scultureai_venv/
+dependencies 
+aws_lambda_artifact.zip
+.env
